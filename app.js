@@ -27,7 +27,7 @@ function rand(maxLimit = 1000) {
 }
 
 rand();
-console.log("random number before reset: ", randomNum);
+// console.log("random number before reset: ", randomNum);
 
 // using keyup event to determine what value is entered
 guess.addEventListener("keyup", (e) => {
@@ -62,7 +62,7 @@ function checkGuessesLeft() {
 		notify.textContent = "You are out of guesses, press reset to try again";
 	}
 	numGuesses.textContent = "Number of guesses left: " + guesses;
-	console.log(guesses);
+	// console.log(guesses);
 }
 
 // check if the guess entered is right or wrong and display the appropriate notification
@@ -105,6 +105,6 @@ function reset() {
 	isRightNumber.textContent = "";
 	notify.textContent = "";
 	range.classList.add("range");
-	console.log("random number after reset: ", randomNum);
-	console.log("guesses left is: ", guesses);
+	// console.log("random number after reset: ", randomNum);
+	// console.log("guesses left is: ", guesses);
 }
