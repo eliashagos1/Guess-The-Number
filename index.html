@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Guess The Number</title>
+	</head>
+	<body>
+
+		<h1>Guess The Number</h1>
+		<!-- <h2 id="numGuesses"></h2> -->
+		<h3 id="notify"></h3>
+      <div>
+		<form>
+			<label for="numberGuessed"></label>
+      <h3>Your Guess:</h3>
+      <br>
+      
+			<input
+				type="text"
+				name="numberGuessed"
+				id="numberGuessed"
+				placeholder="Enter a number"
+			/>
+			<button id="submit">Submit</button>
+		</form>
+        <h2 class="lifes" id="numGuesses"></h2>
+
+		<p id="isRightNumber"></p>
+
+		<section class="hintSection">
+			<button id="hint">Hint</button>
+			<button id="reset">Reset</button>
+		</section>
+		<p id="range" class="range">Number is between 1 - 10</p>
+</div>
+		<script src="app.js"></script>
+	</body>
+</html>
